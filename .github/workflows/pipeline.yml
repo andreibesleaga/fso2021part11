@@ -39,5 +39,5 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           healthcheck: ${{secrets.HEROKU_HEALTHCHECK2}}
           checkstring: "ok"
-          delay: 9
+          delay: 10
           rollbackonhealthcheckfailed: false
