@@ -23,8 +23,6 @@ jobs:
         run: npm run lint
       - name: build
         run: npm run build:ui
-      - name: deploy
-        run: npm run deploy:git
       - uses: actions/checkout@v2
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' }}
