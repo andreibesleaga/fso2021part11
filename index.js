@@ -28,6 +28,10 @@ app.get('/', (request, response) => {
   response.send('Phonebook API server')
 })
 
+app.get('/health', (request, response) => {
+  response.send('ok')
+})
+
 app.get('/info', (request, response) => {
   var crtTime = new Date().toString()
   Person.countDocuments({}).then(docCount => {
